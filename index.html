@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HJ'SPA</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/index_px.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/index_media.css">
+  <script src="https://kit.fontawesome.com/4476cc0614.js" crossorigin="anonymous"></script>
   <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -42,65 +43,76 @@
 </header>
 
 <article id="box01">
-  <!-- h2 -->
-<h2>
-  조혜진 <br>
-  Front-End Developer Portfoilo</h2>
-
-  <p class="main_des">
+<div id="center">
+  <div class="show">
+    <div class="gall">
+  <ul>
+    <li class="main01">
+    <h2 class="mainmove">조혜진 <br> Front-End Developer Portfoilo</h2>
+    <p class="main_des01">
     안녕하세요.<br>
     더 재미있는, 더 의미있는, 더 틀을 깨는<br>
     세상에 기여하는 일을 하고 싶은<br>
     신입 프론트엔드 개발자입니다. :)<br>
-    <!-- 사람들의 삶을 즐겁고 이롭게 만드는 일을 해보려 합니다 :) -->
-  </p>
+</p>
+            
+<p class="main_btn">
+<button>
+<a href="#box02">Let's Go</a></button></p>
+</li>
 
-  <p class="main_btn">
-    <button>
-      <a href="#box02">Let's Go</a></button></p>
+<li class="main02">
+  <h2>차린 건 없지만 어서오세요</h2>
+  <p class="main_des02">
+    뭐라고쓰지
+  </p>
+</li>
+</ul>
+
+<p class="next"><i class="fa-solid fa-circle-chevron-right"></i></p>
+<p class="prev"> <i class="fa-solid fa-circle-chevron-left"></i></p>
+</div>
+</div>
+</div>
 </article>
 
 <article id="box02">
-<div>
   <h3>ABOUT ME</h3>
-  <!-- div.myinfo -->
 <div class="myinfo">
 
 <div>
-  <img src="./images/iam.png" alt="iam">
+  <img src="./images/gunchim.jpg" alt="iam">
   <p>이름</p>
   <p>조혜진</p>
 </div>
 
 <div>
-  <img src="./images/calendar.png" alt="calender">
+  <img src="./images/zichim.png" alt="calender">
   <p>생년월일</p>
   <p>1997.03.11</p>
 </div>
 
 <div>
-  <img src="./images/location.png" alt="location">
+  <img src="./images/zichim2.jpg" alt="location">
   <p>거주지</p>
-  <p>경기도 부천</p>
+  <p>경기도</p>
 </div>
 
 <div>
-  <img src="./images/call.png" alt="call">
+  <img src="./images/zzanggu.png" alt="call">
   <p>연락처</p>
-  <p>010-0000-0000</p>
+  <p>010</p>
 </div>
 
 <div>
-  <img src="./images/email.png" alt="email">
+  <img src="./images/zingzing.jpg" alt="email">
   <p>이메일</p>
-  <p>abc@naver.com</p>
-</div>
+  <p>abc@</p>
 </div>
 </div>
 </article>
 
 <article id="box03">
-<div>
 <h3>My Skill</h3>
 
 <div class="icon">
@@ -134,64 +146,115 @@
     <a href="#">Git</a></li>
 </ul>
 </div>
-</div>
 </article>
 
 <article id="box04">
-<div>
 <h3>MY WORKS</h3>
 
-<div class="box">
+<div class="modal_box">
 <figure>
-  <a href="./images/pageimg1.png">
-<img src="./images/pageimg1.png" alt="workpic1" height="105"></a>
-<figcaption>
-  <span>Work 1</span>
-  <span>&#10004; 일룸 pet 가구 홈페이지</span>
-</figcaption>
-</figure>
-        
-<figure>
-  <a href="./images/pageimg2.png">
-<img src="./images/pageimg2.png" alt="workpic2" height="105"></a>
-<figcaption>
-  <span>Work 2</span>
-  <span>&#10004; Self-introduce SPA</span>
-</figcaption>
+  <img class="img modal1" src="/images/pageimg1.png" alt="work01">
+  <figcaption>modal 1</figcaption>
 </figure>
 
-<figure>
-  <a href="./images/pageimg3.png">
-  <img src="./images/pageimg3.png" alt="workpic3" height="105"></a>
-<figcaption>
-  <span>Work 3</span>
-  <span>&#10004; Tiffany 홈페이지</span>
-</figcaption>
-</figure>
-
-<figure>
-  <a href="./images/amusement.jpg">
-<img src="./images/amusement.jpg" alt="workpic4" height="105"></a>
-<figcaption>
-  <span>Work 4</span>
-  <span>&#10004; 클론코딩1</span>
-</figcaption>
-</figure>
-
-<figure>
-  <a href="./images/citymoon.jpg">
-<img src="./images/citymoon.jpg" alt="workpic5" height="105"></a>
-<figcaption>
-  <span>Work 5</span>
-  <span>&#10004; 클론코딩2</span>
-  </figcaption>
-</figure>
+<div class="modal hidden">
+  <div class="background"></div>
+  <div class="content">
+    <button class="closebtn">&#215;</button>
+    <img class="inmodal 1"  src="./images/pageimg1.png" alt="work 01">
+    <dl>
+      <dt>일룸 pet 가구 홈페이지</dt>
+      <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
+      <dd>&#10004; PAGE : 9 page</dd>
+      <dd>&#10004; https://github.com/hyejin</dd>
+      <dd>&#10004; https://netlify.com</dd>
+    </dl>
+  </div>
 </div>
+
+  <figure>
+    <img class="img modal2" src="/images/pageimg2.png" alt="work02">
+    <figcaption>modal 2</figcaption>
+  </figure>
+
+  <div class="modal hidden">
+    <div class="background"></div>
+    <div class="content">
+      <button class="closebtn">&#215;</button>
+      <img class="inmodal 2" src="./images/pageimg2.png" alt="work 02">
+      <dl>
+        <dt>Self-introduce SPA</dt>
+        <dd>&#10004; STACK : HTML, CSS, Jquery</dd>
+        <dd>&#10004; PAGE : 1 page</dd>
+        <dd>&#10004; https://github.com/hyejin</dd>
+        <dd>&#10004; https://netlify.com</dd>
+      </dl>
+    </div>
+  </div>
+
+  <figure>
+    <img class="img modal3" src="/images/pageimg3.png" alt="work03">
+    <figcaption>modal 3</figcaption>
+  </figure>
+
+  <div class="modal hidden">
+    <div class="background"></div>
+    <div class="content">
+      <button class="closebtn">&#215;</button>
+      <img class="inmodal 3" src="./images/pageimg3.png" alt="work 03">
+      <dl>
+        <dt>Tiffany&Co 홈페이지</dt>
+        <dd>&#10004; STACK : HTML, CSS, React.js</dd>
+        <dd>&#10004; PAGE : 1 page</dd>
+        <dd>&#10004; https://github.com/hyejin</dd>
+        <dd>&#10004; https://netlify.com</dd>
+      </dl>
+    </div>
+  </div>
+
+  <figure>
+    <img class="img modal4" src="/images/pageimg4.png" alt="work 04">
+    <figcaption>modal 4</figcaption>
+  </figure>
+
+  <div class="modal hidden">
+    <div class="background"></div>
+    <div class="content">
+      <button class="closebtn">&#215;</button>
+      <img class="inmodal 4" src="./images/pageimg4.png" alt="work 04">
+      <dl>
+        <dt>LUSH 홈페이지 클론 코딩</dt>
+        <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
+        <dd>&#10004; PAGE : 1 page</dd>
+        <dd>&#10004; https://github.com/hyejin</dd>
+        <dd>&#10004; https://netlify.com</dd>
+      </dl>
+    </div>
+  </div>
+
+  <figure>
+    <img class="img modal5" src="/images/pageimg5.png" alt="work05">
+    <figcaption>modal 5</figcaption>
+  </figure>
+
+  <div class="modal hidden">
+    <div class="background"></div>
+    <div class="content">
+      <button class="closebtn">&#215;</button>
+      <img class="inmodal 5" src="./images/pageimg5.png" alt="work 05">
+      <dl>
+        <dt>Starbucks 홈페이지</dt>
+        <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
+        <dd>&#10004; PAGE : 1 page</dd>
+        <dd>&#10004; https://github.com/hyejin</dd>
+        <dd>&#10004; https://netlify.com</dd>
+      </dl>
+    </div>
+  </div>
 </div>
 </article>
 
 <article id="box05">
-  <div>
 <h3>Contact</h3>
 
 <p class="title">
@@ -224,35 +287,33 @@
 </form>
 </div>
 </div>
-</div>
 </article>
+
 
 <footer>
 Copyright (c) 2022 my portfolio by smg all right reserved
 </footer>
 </div>
+<script src="/js/Modal.js"></script>
 
 <script>
-$(function(){
-  $('body').append('<div id="back"></div><div id="main"></div>');
-  $('figure>a').on('click',function(e){
-    let pic= $(this).attr('href');
+  $(function(){
 
-  $('#back').show();
-  $('#main').show().html('<img src="'+pic+'" alt="상세이미지">');
+    let LiWidth = $('ul>li.main01').width();
+    console.log(LiWidth);
 
-  $('#main').css({
-    marginLeft :'-'+430+'px',
-    marginRight :'+'+350+'px',
-    marginTop :'-'+170+'px'
-  });
-  return false;
-  });
-  $('#back').on('click',function(e){
-    $(this).hide();
-    $('#main').hide();
-  });
-});
+    $('p.next').click(function(e){
+        $('div.gall>ul>li:first').appendTo('div.gall>ul');
+        $('div.gall>ul').fadeIn('margin-left','-'+Liwidth+'px');
+        });
+    });
+
+    //prev
+    $('p.prev').click(function(e){
+            $('div.gall>ul>li:last').prependTo('div.gall>ul');
+        $('div.gall>ul').fadeIn('margin-left','-'+Liwidth+'px');
+        });
 </script>
+
 </body>
 </html>
