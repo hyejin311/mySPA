@@ -116,6 +116,7 @@ nav>ul{
     flex-direction: column;
     justify-content: center;
 }
+
 nav>ul>li{
     width:100%;
     border-bottom:1px solid #fff;
@@ -125,8 +126,7 @@ nav>ul>li>a{line-height:60px;}
 nav .close{display: block;}
 
 ul>li h2{
-    padding-top:190px;
-}
+    padding-top:190px;}
 
 ul>li>p.main_des01{
     font:500 18px/30px'Noto Sans KR', sans-serif;
@@ -158,6 +158,7 @@ p.main_btn>button{
 margin:0 20px;
 font-size: 20px;
 }
+
 #box03>div.icon>ul{justify-content: space-evenly;}
 
 #box03>div.icon>ul>li{
@@ -169,12 +170,12 @@ font-size: 20px;
 #box04>div.modal_box{
     display:block;}
 
-    #box04>div.modal_box figure{
-        width:100%;
-        margin-bottom:50px;
-    }
+#box04>div.modal_box figure{
+    width:100%;
+    margin-bottom:50px;
+}
 
-    div.modal_box>figure>figcaption>span{
+div.modal_box>figure>figcaption>span{
     font:16px/25px 'Gothic A1', sans-serif;
     letter-spacing: 3px;
 }
@@ -194,10 +195,12 @@ div.form>form>fieldset>ul>li>label{
     margin:0 auto;
     width: auto;
 }
+
 div.form>form>fieldset>ul>li>input{
 display: inline-block;
 width: 80%;
 height: 50px;
 }
+
 div.form>form>fieldset>ul>li>textarea{height:100px;}
 }

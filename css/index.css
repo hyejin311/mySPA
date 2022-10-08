@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
-img{max-width:100%;}
+
+img{max-width:80%;}
 
 .hide{
 width:0; height:0;
@@ -36,7 +37,7 @@ visibility: hidden;
 /* header */
 header{
     padding:15px 0;
-    background-color:rgba(242, 240, 217,0.7);
+    background-color:rgba(230, 223, 146,0.7);
     /* 타블렛, 모바일 버튼 */
     position:fixed;
     z-index: 100;
@@ -186,8 +187,7 @@ li.main02>p.main_des02{
     font:bold 15px/20px'Noto Sans KR', sans-serif;
     text-align: center;
     letter-spacing: 2px;
-    position:absolute;
-    left:48%; top:50%;
+    margin-top:350px;
 }
 
 p.main_btn{
@@ -210,25 +210,32 @@ p.main_btn>button{
 #box02>div.myinfo{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    justify-content: center;
+    width: 50%;
     margin:0 auto;
-    text-align: center;
 }
 
-#box02>div.myinfo>div{
-    width:300px;
-    margin:30px 10px;
+#box02>div.myinfo dl{
+    display: flex;
+    margin:20px 0;
 }
 
-#box02 p{
-    display: inline;
-    margin:0 15px;
+#box02>div.myinfo dl>dt{
+width:300px;
+padding-left: 40px;
+}
+
+#box02>div.myinfo dl>dd{
+    padding:0 20px;
+    width: 100px;
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    line-height: 40px;
     font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
 }
 
-#box02 p:last-child{
+#box02>div.myinfo dl>dd:last-child{
     font-weight: normal;}
 
 /* box03 */
@@ -254,98 +261,45 @@ p.main_btn>button{
 }
 
 /* box04 */
-#box04>div.modal_box{
-    display:flex;
-    justify-content: space-evenly;
+#box04>div.works{
     width: 70%;
-    margin:0 auto;
-}
-
-.background{
-    background-color: rgba(32, 32, 32, 0.8);
-    width: 100%; height: 100%;
-}
-
-.hidden{
-    display: none;}
-
-.modal{
-    position:fixed;
-    top:0; left: 0;
-    width: 100%; height: 100%;
 }
 
 .content{
-    position:fixed;
-    top:15%;
-    width: 100%;
     padding:50px;
-    border-radius: 10%;
     text-align: center;
-    box-shadow: 5px 5px rgba(0,0,0,0.5) rgba(0,0,0,0.6);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-div.content>.inmodal{
-    width: 50%;}
-
-button.closebtn{
-    width: 50px; height: 50px;
-    background-color: #fff;
-    position: absolute;
-    top:0; right:15%;
-    border-radius: 30px;
+.content dl{
+    margin-left: 30px;
 }
 
-button.closebtn:hover{
-    cursor: pointer;
-    background-color: lightgray;
+.content img{
+    width: 60%;
 }
 
-div.content dl{
-    margin-left: 50px;
-    color:#fff;
-}
-div.content dl dt{
-    font-size: 30px;
-    font-weight: bold;
-    font-family:'Gothic A1', sans-serif;
-    letter-spacing: 1px;
-    margin:50px 0;
+.content dl>dt{
+    font: bold 25px/ 30px 'Gothic A1', sans-serif;
+    color:hotpink;
+    margin-bottom:40px;
 }
 
-dt::before{content: " < ";}
-dt::after{content: " > ";}
-
-div.content dl dd{
+.content dl>dd{
+    font: bold 15px/ 40px 'Gothic A1', sans-serif;
     text-align: left;
-    font-size: 20px;
-    line-height: 50px;
-    border-bottom: 2px solid rgb(240, 214, 227);
 }
 
-div.modal_box figure{
-    width:18%;}
-
-div.modal_box>figure>figcaption{
-    margin:40px 0;}
-
-div.modal_box>figure>figcaption{
-    display:block;
-    text-align: center;
-    width:100%;
-    font:13px/25px 'Gothic A1', sans-serif;
-    letter-spacing: 1px;
-}
-
-div.modal_box>figure>figcaption>span:first-child{
-    padding-bottom:20px;
-    box-sizing: border-box;
-    letter-spacing: 5px;
-    color:#fff;
-    font:25px/ 20px 'Gugi', cursive;
+div.works>a{
+    display: inline-block;
+    border:1px solid yellow;
+    background-color: yellow;
+    border-radius: 10px;
+    color:#333;
+    padding:5px;
+    font-size: 10px;
+    text-align: right;
+    margin-left: 90%;
 }
 
 /* box05 */
