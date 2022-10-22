@@ -209,30 +209,19 @@ p.main_btn>button{
 /* box02 */
 #box02>div.myinfo{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
-    margin:0 auto;
 }
 
 #box02>div.myinfo dl{
-    display: flex;
-    margin:20px 0;
-}
+    margin:20px 0;}
 
 #box02>div.myinfo dl>dt{
-width:300px;
-padding-left: 40px;
-}
+padding-left: 40px;}
 
 #box02>div.myinfo dl>dd{
     padding:0 20px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 20px;
+    text-align: center;
+    font: bold 15px/ 35px 'Gothic A1', sans-serif;
 }
 
 #box02>div.myinfo dl>dd:last-child{

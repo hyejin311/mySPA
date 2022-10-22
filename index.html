@@ -182,69 +182,7 @@
 <h3>MY WORKS</h3>
 
 <div class="works">
-  <div class="content">
-    <img src="./images/pageimg1.png" alt="work01">
-    
-    <dl>
-      <dt>일룸 pet 가구 홈페이지</dt>
-      <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
-      <dd>&#10004; PAGE : 9 page</dd>
-      <dd>&#10004; https://github.com/hyejin311/illoom-pet</dd>
-    </dl>
-  </div>
-  <a href="https://github.com/hyejin311/illoom-pet">이동하기</a>
-
-    <div class="content">
-      <img class="inmodal1" src="./images/pageimg2.png" alt="work02">
-      
-      <dl>
-        <dt>Self-introduce SPA</dt>
-        <dd>&#10004; STACK : HTML, CSS, Jquery</dd>
-        <dd>&#10004; PAGE : 1 page</dd>
-        <dd>&#10004; https://github.com/hyejin</dd>
-        <dd>&#10004; https://welcome-tothe-hyejinpage.netlify.app/</dd>
-      </dl>
-    </div>
-    <a href="https://welcome-tothe-hyejinpage.netlify.app/">이동하기</a>
-
-    <div class="content">
-      <img src="./images/pageimg3.png" alt="work03">
-      
-      <dl>
-        <dt>Tiffany & Co 홈페이지</dt>
-        <dd>&#10004; STACK : HTML, CSS, React.js</dd>
-        <dd>&#10004; PAGE : 1 page</dd>
-        <dd>&#10004; https://github.com/hyejin311/react-tiffany</dd>
-      </dl>
-    </div>
-    <a href="https://github.com/hyejin311/react-tiffany">이동하기</a>
-
-    <div class="content">
-      <img src="./images/pageimg4.png" alt="work04">
-      
-      <dl>
-        <dt>HAPPY 혜진 DAY 홈페이지</dt>
-        <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
-        <dd>&#10004; PAGE : 1 page</dd>
-        <dd>&#10004; https://github.com/hyejin311/happy-hjblog</dd>
-        <dd>&#10004; https://hyejin-hjblog-today.netlify.app</dd>
-      </dl>
-    </div>
-    <a href=" https://hyejin-hjblog-today.netlify.app">이동하기</a>
-
-    <div class="content">
-      <img src="./images/pageimg5.png" alt="work05">
-      
-      <dl>
-        <dt>React Shoes Shop 홈페이지</dt>
-        <dd>&#10004; STACK : HTML, CSS, Javascript, React.js</dd>
-        <dd>&#10004; PAGE : 1 page</dd>
-        <dd>&#10004; https://github.com/hyejin311/react-shoes-shop</dd>
-        <dd>&#10004; https://hyejin-react-shoeshop.netlify.app/</dd>
-      </dl>
-    </div>
-    <a href="https://hyejin-react-shoeshop.netlify.app/">이동하기</a>
-  </div>
+</div>
 </article>
 
 <article id="box05">
@@ -283,9 +221,7 @@
 </article>
 
 
-<footer>
-Copyright (c) 2022 my portfolio by smg all right reserved
-</footer>
+<footer>bye</footer>
 </div>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="/js/Modal.js"></script>
@@ -307,6 +243,70 @@ Copyright (c) 2022 my portfolio by smg all right reserved
             $('div.gall>ul>li:last').prependTo('div.gall>ul');
         $('div.gall>ul').fadeIn('margin-left','-'+Liwidth+'px');
         });
+
+  //data vinding
+      var workList =[
+        {
+          src: './images/pageimg1.png',
+          title: '일룸 pet 가구 홈페이지',
+          skill: ' HTML, CSS, Javascript, J-query',
+          page: 9,
+          link: ' https://github.com/hyejin311/illoom-pet',
+          btnlink:' https://github.com/hyejin311/illoom-pet'
+        },
+        {
+          src: './images/pageimg2.png',
+          title: 'Self-introduce SPA',
+          skill: 'HTML, CSS, Jquery',
+          page: 1,
+          link: ' https://github.com/hyejin311/mySPA',
+          btnlink:'https://welcome-tothe-hyejinpage.netlify.app/'
+        },
+        {
+          src: './images/pageimg3.png',
+          title: 'Tiffany & Co 홈페이지',
+          skill: 'HTML, CSS, React.js',
+          page: 1,
+          link: 'https://github.com/hyejin311/react-tiffany',
+          btnlink:'https://github.com/hyejin311/react-tiffany'
+        },
+        {
+          src: './images/pageimg4.png',
+          title: 'HAPPY 혜진 DAY 홈페이지',
+          skill: ' HTML, CSS, Javascript,React.js',
+          page: 1,
+          link: ' https://github.com/hyejin311/happy-hjblog',
+          btnlink:'https://hyejin-hjblog-today.netlify.app'
+        },
+        {
+          src: './images/pageimg5.png',
+          title: 'React Shoes Shop 홈페이지',
+          skill: ' HTML, CSS, Javascript, J-query',
+          page: 1,
+          link: ' https://github.com/hyejin311/react-shoes-shop',
+          btnlink:'https://hyejin-react-shoeshop.netlify.app/'
+        },
+      ]
+
+      workList.forEach((a,i)=>{
+        var workfive =
+        `
+      <div class="content">
+      <img src="${workList[i].src}" alt="work">
+      
+      <dl>
+        <dt>${workList[i].title}</dt>
+        <dd>&#10004; ${workList[i].skill}</dd>
+        <dd>&#10004; PAGE : ${workList[i].page} page</dd>
+        <dd>&#10004; ${workList[i].link}</dd>
+      </dl>
+    </div>
+    <a href="${workList[i].btnlink}">이동하기</a>
+  </div>
+        `
+        $('.works').append(workfive);
+      })
+      
 </script>
 </body>
 </html>
