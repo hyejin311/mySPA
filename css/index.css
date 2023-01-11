@@ -13,10 +13,10 @@
 
 @keyframes bounce-up-down {
   0% {
-    transform: translateY(-9%);
+    transform: translateY(-10%);
   }
   100% {
-    transform: translateY(9%);
+    transform: translateY(10%);
   }
 }
 
@@ -170,7 +170,7 @@ div.home_image{width: 400px;}
 
 .home_image>figure{
   animation-name: bounce-up-down;
-  animation-duration: 1.3s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -180,7 +180,7 @@ div.seemywork{text-align: center;}
 
 .home_btn{
   width: 10%;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid transparent;
   background-color: #3b73ec;
   color:#fff;
