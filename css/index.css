@@ -168,7 +168,7 @@ span.hangul{
 
 div.home_image{width: 400px;}
 
-.home_image>figure{
+.home_image>figure>img{
   animation-name: bounce-up-down;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
@@ -328,7 +328,7 @@ div.right_info>div.linkBtn{
   text-align: end;
 }
 
-div.linkBtn>button{
+div.linkBtn button{
   border:2px solid #f6af97;
   background-color: #f6af97;
   border-radius: 50px;
