@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyejin website</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 </head>
 <body>
@@ -220,6 +220,25 @@
    </div>
 </div>
 </section>
+
+<section id="page4">
+  <p class="contact_title">Contact</p>
+ <div id="Contact">
+  <figure>
+    <img src="./images/mail.png" alt="mail">
+  </figure>
+  <div class="contact_back">
+    <br><br><br><br><br> <br><br><br><br><br> <br><br>
+  </div>
+    <div class="contact_front">
+    <ul>
+      <li class="contact_mail">hj_jo0311@naver.com</li>
+      <li class="contact git">https://github.com/hyejin311/</li>
+      <li class="contact velog">https://velog.io/@hyyejin311</li>
+    </ul>
+    </div>
+ </div> 
+</section>
 </main>
 
 <footer>
@@ -280,13 +299,13 @@ Home();
 
 function Profile(){
   $('.home_btn').on('click',function(){
-    var offset= $('.profile_bigtitle').offset();
+    var offset= $('#Profile').offset();
     $('html,body').animate({scrollTop:offset.top},1000);
-
-  $('.profile').on('click',function(){
-    var offset = $('.profile_bigtitle').offset();
-  $('html, body').animate({scrollTop:offset.top},1000);
   });
+  $('.profile').on('click',function(){
+    var offset = $('#Profile').offset();
+  $('html, body').animate({scrollTop:offset.top},1000);
+
   });
 }
 Profile();
@@ -307,82 +326,6 @@ function Contact(){
 }
 Contact();
 </script>
-</script>
-</body>
-</html>
-
-  //data vinding
-      var workList =[
-        {
-          src: './images/pageimg1.png',
-          title: '일룸 pet 가구 홈페이지',
-          skill: ' HTML, CSS, Javascript, J-query',
-          page: 9,
-          link: ' https://github.com/hyejin311/illoom-pet',
-          btnlink:' https://illompet-hyejin311.netlify.app/'
-        },
-        {
-          src: './images/pageimg2.png',
-          title: 'Self-introduce SPA',
-          skill: 'HTML, CSS, Jquery',
-          page: 1,
-          link: ' https://github.com/hyejin311/mySPA',
-          btnlink:'https://welcome-tothe-hyejinpage.netlify.app/'
-        },
-        {
-          src: './images/pageimg3.png',
-          title: 'Tiffany & Co 홈페이지',
-          skill: 'HTML, CSS, React.js',
-          page: 1,
-          link: 'https://github.com/hyejin311/react-tiffany',
-          btnlink:'https://react-tiffany-routerpractice.netlify.app/'
-        },
-        {
-          src: './images/pageimg4.png',
-          title: 'HAPPY 혜진 DAY 홈페이지',
-          skill: ' HTML, CSS, Javascript,React.js',
-          page: 1,
-          link: ' https://github.com/hyejin311/happy-hjblog',
-          btnlink:'https://hyejin-hjblog-today.netlify.app'
-        },
-        {
-          src: './images/pageimg5.png',
-          title: 'React Shoes Shop 홈페이지',
-          skill: ' HTML, CSS, Javascript, J-query',
-          page: 1,
-          link: ' https://github.com/hyejin311/react-shoes-shop',
-          btnlink:'https://hyejin-react-shoeshop.netlify.app/'
-        },
-        {
-          src: './images/pageimg6.png',
-          title: '가수 백예린 "Dearest" 웹페이지',
-          skill: ' HTML, CSS, Javascript, J-query,React.js',
-          page: 1,
-          
-          link: 'https://github.com/hyejin311/dearest',
-          btnlink:'https://dearest-yerin.netlify.app/'
-        }
-      ]
-
-      workList.forEach((a,i)=>{
-        var workfive =
-        `
-      <div class="content">
-      <img src="${workList[i].src}" alt="work">
-      
-      <dl>
-        <dt>${workList[i].title}</dt>
-        <dd>&#10004; ${workList[i].skill}</dd>
-        <dd>&#10004; PAGE : ${workList[i].page} page</dd>
-        <dd>&#10004; ${workList[i].link}</dd>
-      </dl>
-    </div>
-    <a href="${workList[i].btnlink}">이동하기</a>
-  </div>
-        `
-        $('.works').append(workfive);
-      })
-      
 </script>
 </body>
 </html>

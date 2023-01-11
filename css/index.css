@@ -55,7 +55,8 @@ section#page1, section#page2{
   width: 100vw;
   height: 100vh;}
 
-section#page3{width: 100vw;}
+section#page3, section#page4{width: 100vw;}
+section#page4{ margin:100px 0;}
 
 header{
   width: 100%;
@@ -155,7 +156,7 @@ div#Home{
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   background:linear-gradient(-154deg,#fca6c6 20%, #f6af97 60%, #3b73ec 80%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -219,7 +220,7 @@ p.profile_bigtitle{
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   background:linear-gradient(-154deg,#fca6c6 20%, #f6af97 60%, #3b73ec 80%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -264,7 +265,7 @@ div.profile_say>span{
 
 div.profile_say>span.highlight{
   background:linear-gradient(-154deg,#fca6c6 20%, #f6af97 60%, #3b73ec 80%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -345,6 +346,57 @@ div.linkBtn>button>a{
   font-family: 'Gothic A1',serif;
   color:#fff;
 }
+
+/* 4. contact */
+p.contact_title{
+    text-align: center;
+    font:bold 30px /50px "Work Sans", sans-serif;
+    text-shadow: 3px 3px 3px gray;
+  }
+
+div#Contact{
+  position: relative;
+  width:50%;
+  margin:10px auto;
+  padding:30px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.4);
+  /* background-color: #f1d4ca; */
+  box-shadow: 3px 3px 3px;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+div#Contact>figure{
+  width: 25%;
+  left:-10%; top:-10%;
+  position: absolute;
+}
+
+div.contact_back{
+  position: absolute;
+  left:40%; top:15%;
+  width:20%;
+  border:3px solid #f19d81;
+  border-radius: 50px;
+  z-index: -5;
+}
+
+div.contact_front{
+  width: 50%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+div.contact_front>ul>li{
+  background-color:#f6af97;
+  box-shadow: 3px 3px 3px;
+  border-radius: 20px;
+  margin:20px auto;
+  font: bold 18px/ 40px "Work Sans", sans-serif;
+  text-align: center;
+}
+
 
 /* footer */
 footer{
