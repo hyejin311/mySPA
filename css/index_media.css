@@ -3,14 +3,404 @@
 @media screen and (min-width:1400px){}
 
 /* 1399-1000 */
-@media screen and (max-width:1399px) and (min-width:1000px){}
+@media screen and (max-width:1399px) and (min-width:1000px){
+    .home_title>span{
+        font-size: 60px;
+    }
+    div.home_image{width: 300px;
+    }
+    .home_btn{width: 15%;
+    }
+    /* profile */
+    p.profile_bigtitle{
+        font-size: 26px;
+      }
+    .profile_smalltitle{
+        padding-bottom:10px;
+      }
+    .profile_smalltitle>p{
+        font-size: 32px;
+    }
+    figure.selfie{
+        width:180px;
+      }
+      div#Profile{
+        padding:20px;
+      }
+    div#Profile_info{
+        margin:10px;
+    }
+    div.profile_info{
+        font-size: 16px;
+      }
+      div.profile_say{
+        margin-top:15px;
+      }
+      div.profile_say>span{
+        font-size: 14px;
+      }
+      div.skill_title{
+        font-size: 20px;
+        padding: 15px 0;
+      }
+      div.skill_info{
+        flex-wrap: wrap;
+      }
+      div.skill_info>figure{
+        width: 21%;
+        margin:5px 0;
+        text-align: center;
+      }
+      /* work */
+      p.work_title{
+        font-size:26px;
+      }
+      div.right_title{
+        font-size:20px;
+    }
+      div.right_info>p{
+      font-size:14px;
+    }
+    div.right_info>div.linkBtn{
+        padding-top:10px;
+      }
+    div.linkBtn>button>a{
+        font-size: 11px;
+      }
+      /* contact */
+      p.contact_title{
+        font-size:26px;
+    }
+    div.contact_front{
+        width: 60%;
+      }
+      div.contact_front>ul>li{
+        font-size: 17px;
+      }
+}
 
-@media screen and (max-width:999px) and (min-width:990px){}
+@media screen and (max-width:999px) and (min-width:990px){
+    .home_title>span{
+        font-size: 60px;
+    }
+    div.home_image{width: 280px;
+    }
+    .home_btn{width: 15%;
+    }
+    span.hangul{
+        font-size: 18px;
+      }
+      p.profile_bigtitle{
+        font-size: 24px;
+      }
+      .profile_smalltitle{
+        padding-bottom:10px;
+      }
+    .profile_smalltitle>p{
+        font-size: 28px;
+    }
+    figure.selfie{
+        width:150px;
+      }
+      div#Profile{
+        padding:20px;
+      }
+      div#Profile_info{
+        margin:10px;
+    }
+    div.profile_info{
+        font-size: 16px;
+      }
+      div.profile_say{
+        margin-top:15px;
+      }
+      div.profile_say>span{
+        font-size: 14px;
+      }
+      div.skill_title{
+        font-size: 20px;
+        padding: 15px 0;
+      }
+      div.skill_info{
+        flex-wrap: wrap;
+      }
+      div.skill_info>figure{
+        width: 21%;
+        margin:5px 0;
+        text-align: center;
+      }
+      /* work */
+      p.work_title{
+        font-size:24px;
+      }
+      div.right_title{
+        font-size:18px;
+    }
+      div.right_info>p{
+      font-size:13px;
+}
+div.right_info>div.linkBtn{
+    padding-top:7px;
+  }
+div.linkBtn>button>a{
+    font-size: 10px;
+  }
+        /* contact */
+        p.contact_title{
+            font-size:24px;
+        }
+        div#Contact>figure{
+            width: 25%;
+          }
+        div.contact_front{
+            width: 60%;
+          }
+          div.contact_front>ul>li{
+            font-size: 16px;
+          }
+}
 
 /*tablet*/
 @media screen and (max-width:989px) and (min-width:580px){
+    main{
+        width: 100%;
+    }
+    div#Home{
+        padding-top:150px;
+        justify-content: space-around;
+    }
+    .home_title>span{
+        font-size: 70px;
+    }
+      span.hangul{
+        font-size: 20px;
+      }
+    div.home_image{width: 270px;
+    }
+    div.seemywork{
+        margin-top:20px;
+    }
+    .home_btn{
+        width: 20%;
+        padding:20px 0;
+        font-size: 12px;
+      }
+      /* profile */
+      div#Profile{
+        width:95%;
+        padding:10px;
+      }
+      p.profile_bigtitle{
+        font:bold 30px /60px "Work Sans", sans-serif;
+      }
+      .profile_smalltitle{
+        padding-bottom: 10px;
+      }
+      .profile_smalltitle>p{
+        font-size: 23px;
+      }
+      div#Profile_info{
+        margin:10px;
+        display: block;
+      }
+      figure.selfie{
+        width:160px;
+      }
+      .profile_left{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      div.profile_info{
+        align-self: center;
+        font-size: 16px;
+      }
+      div.profile_info>span.bold{
+        line-height: 30px;
+      }
+      div.profile_say{
+        margin-top:20px;
+        text-align: center;
+      }
+      div.profile_say>span{
+        font-size: 13px;
+        line-height: 25px;
+      }
+      div.skill_title{
+        font-size: 20px;
+        padding: 30px 0;
+      }
+      div.skill_info{
+        flex-wrap: wrap;
+    }
+    figure>figcaption>p{
+        font-size: 12px;
+      }
+      /* work */
+      div#Work{
+        width:95%;
+      }
+      p.work_title{
+        font:bold 30px /60px "Work Sans", sans-serif;
+      }
+      div.work01,div.work02,div.work03{
+        display:block;
+        padding:20px;
+      }
+      div.work01>figure,div.work02>figure,div.work03>figure{
+        width:100%;
+    }
+    div.right{
+        width:100%;
+    }
+    div.right_title{
+        font-size: 20px;
+        margin:10px 0;
+        text-align: center;
+    }
+    div.right_info>p{
+    width: 60%;
+    font-size: 14px;
+    margin:0 auto;
+    }
+    div.right_info>div.linkBtn{
+        padding-top:20px;
+        text-align: center;
+      }
+      div.linkBtn>button>a{
+        font-size: 10px;
+      }
+      /* 4. contact */
+p.contact_title{
+    font:bold 30px /60px "Work Sans", sans-serif;
+  }
+  div#Contact{
+    width:80%;
+  }
+  div#Contact>figure{
+    width: 23%;
+    left:-10%; top:-5%;
+  }
+  div.contact_back{
+    left:43%; top:16%;
+  }
+  
+  div.contact_front{
+    width: 50%;
+  }
+  div.contact_front>ul>li{
+    margin:30px auto;
+    font: bold 18px/ 2 "Work Sans", sans-serif;
+  }
 }
 
 /* mobile */
 @media screen and (max-width:579px) and (min-width:350px){
+    #container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .typing {
+          letter-spacing: 6px;
+      }
+      .typing> h2 {
+          font-size: 40px;
+      }
+      main{
+        width:100%;
+        margin:0 auto;
+      }
+      section#page0, section#page1, section#page2{
+        width: 100vw;
+        height: auto;}
+      /* 1. home */
+div#Home{
+    padding-top:70px;
+    display: block;
+  }
+  .home_title{margin:60px 10px 20px;}
+  
+  .home_title>span{
+    font-size: 70px;
+    line-height: 1.1;
+  }
+  
+  span.hangul{
+    font-size: 16px;
+    line-height: 4;
+  }
+  div.home_image{display: none;
+}
+.home_btn{
+    width: 30%;
+    padding:20px 0;
+    font-size: 10px;
+  }
+  /* 2. profile */
+div#Profile{
+    width:95%;
+    margin:20px auto;
+    padding:10px 0;
+  }
+  p.profile_bigtitle{
+    font-size:35px;
+  }
+  .profile_smalltitle{
+    text-align: center;
+    padding-bottom:20px;
+  }
+  .profile_smalltitle>p{
+    font-size: 30px;
+  }
+  div#Profile_info{
+    margin:0;
+    display: block;
+  }
+  
+  /* div.profile_left{} */
+  figure.selfie{
+    margin:20px;
+    width:200px;
+    margin:0 auto;
+  }
+  
+  div.profile_info{
+    width: 75%;
+    font-size: 18px;
+    margin:20px auto;
+    padding:0;
+  }
+  
+  div.profile_info>span.bold{
+    line-height: 40px;
+    margin-right:10px;
+  }
+  div.profile_say{
+    margin-top:40px;
+  }
+  div.profile_say>span{
+    font-size: 15px;
+    line-height: 35px;
+  }
+  div.skill_title{
+    font-size: 23px;
+    padding: 30px 0;
+  }
+  div.skill_info{
+    flex-wrap: wrap;
+  }
+  div.skill_info>figure{
+    width: 33%;
+    text-align: center;
+    margin:5px;
+  }
+/* 3. work */
+div#Work{
+    width:95%;
+  }
+  div.work01,div.work02,div.work03{
+    display:block;
+    padding:30px;
+    margin:70px 0;
+  }
+  
 }
