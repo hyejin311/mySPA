@@ -704,19 +704,18 @@ div#Profile{
   }
 /* 3. work */
 div#Work{
-    width:95%;
-  }
+    width:95%;}
+    
   div.work01,div.work02,div.work03{
     display:block;
     margin:70px 0;
     padding:20px;
   }
   div.work01>figure,div.work02>figure,div.work03>figure{
-    width:100%;
-}
-div.right{
-    width:100%;
-}
+    width:100%;}
+
+div.right{width:100%;}
+
 div.right_title{
     font-size: 20px;
     margin:10px 0;
@@ -736,24 +735,23 @@ div.right_info>div.linkBtn{
   }
    /* 4. contact */
 p.contact_title{
-font:bold 30px /60px "Work Sans", sans-serif;
-}
-div#Contact{
-width:95%;
-}
+font:bold 30px /60px "Work Sans", sans-serif;}
+
+div#Contact{width:95%;}
+
 div#Contact>figure{
 width: 23%;
 left:0%; top:-5%;
 }
+
 div.contact_back{
 left:43%; top:16%;
 }
 
 div.contact_front{
-width: 95%;
-}
+width: 95%;}
+
 div.contact_front>ul>li{
 margin:30px auto;
 font: bold 18px/ 2 "Work Sans", sans-serif;
-}
-}
+}}
